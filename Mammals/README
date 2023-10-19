@@ -1,1 +1,12 @@
 This folder contains scripts and data to link SEV LTER mammal abundance data (Desert grassland and shrubland) to plant asynchrony data.
+You will need to change the working directories in the scripts to match your device.
+
+Order of operations
+1. Make plant synchrony dataset at web scale from all plant quads data (Sevilleta_allbiomass_05Feb2023) using sev_plant_synchrony_web_scale_mammals_09-22.R
+This creates the dataset: asynchrony_stability_allwebs_mammals.csv
+
+2. Make mammal datasets at web scale from raw mammal count data (sev008_rodentpopns_20231002.csv) using sev_smammal_data_wrangling_asynchrony.R
+This creates the dataset with total mammal abundance/stability: mammal_total_async_stability.csv
+And, a dataset with mammal species abundance/stability: mammal_species_async_stability.csv
+
+3. Statistical analysis: sev_mammal_stability_async_analysis_2023.R
