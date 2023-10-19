@@ -1,0 +1,19 @@
+This folder contains scripts and data to complete analysis of plant biomass and species biomass asynchrony.
+All scripts require that you change the working directory to match your device.
+
+Order of operations - Plant data at the scale of 1 m X 1 m quadrats
+
+1. Use script sev_plant_synchrony_2023.R to get synchrony and biomass stability metrics from all plant data (Sevilleta_allbiomass_05Feb2023.csv)
+this creates asynchrony_stability_allquads.csv to use for analysis
+and plant species - level stability metrics plant_species_stability.csv
+At the end of this script you can also add plant traits using the plant traits database: sev_all_traits_2023.csv
+to create plant_species_stability_traits.csv
+
+2. To do statistical analysis use sev_plant_synchrony_analysis_2023.R with dataoutput file asynchrony_stability_allquads.csv
+
+Order of operations - Plant data at the scale of mammal trapping webs 
+
+(relevant to bees, grasshoppers - but mammals require a different timeline to match mammal sampling - see Mammals folder)
+1. Use script sev_plant_synchrony_data_wrangling_web_scale_2023 to get synchrony and biomass stability metrics from all plant data (Sevilleta_allbiomass_05Feb2023.csv)
+
+2. To do statistical analysis use sev_plant_synchrony_webscale_analysis_2023.R
