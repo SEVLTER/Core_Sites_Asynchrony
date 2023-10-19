@@ -2,7 +2,9 @@ This folder contains scripts and data to link SEV LTER mammal abundance data (De
 You will need to change the working directories in the scripts to match your device.
 
 Order of operations
-1. Make plant synchrony dataset at web scale from all plant quads data (Sevilleta_allbiomass_05Feb2023) using sev_plant_synchrony_web_scale_mammals_09-22.R
+1. Make plant synchrony dataset at web scale from all plant quads data (Sevilleta_allbiomass_05Feb2023.csv) 
+which is too big for Git, so located here: https://drive.google.com/file/d/1wzZbCHU5du4VFzG6-rEXUdvRCGwsf6LM/view?usp=share_link
+using sev_plant_synchrony_web_scale_mammals_09-22.R
 This creates the dataset: asynchrony_stability_allwebs_mammals.csv
 
 
